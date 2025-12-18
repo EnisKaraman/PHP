@@ -2,17 +2,12 @@
 function ucgen($boyut){
     $char = "O";
     $sayac = 1;
-    while ($sayac < $boyut) {
-        for ($i = $sayac; $i < $boyut; $i++) {
-            for ($j = 0; $j < $sayac; $j++){
+    while ($sayac <= $boyut) {
+        for ($i = 1; $i <= $sayac; $i++) {
                 echo $char;
-            }
-
-        echo "<br>";
-        $sayac++;
-
         }
-        
+        echo "<br>";
+        $sayac++;   
     }
 }
 ucgen(15);
